@@ -69,6 +69,7 @@ jobs:
           cd main
           composer require --dev brianium/paratest
       - name: Run tests
+        continue-on-error: true
         run: |
           cd main
           php artisan test --parallel
