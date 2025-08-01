@@ -1,0 +1,53 @@
+.nos-soins {
+    .section--top {
+        background-image: url("/img/soins.jpg");
+    }
+
+    .volonte {
+        font-size: 24px;
+        //color: var(--color-yellow-500);
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .block-text__title {
+        color: var(--color-yellow-500);
+        margin-top: 30px;
+
+        &--mt-0 {
+            margin-top: 0;
+        }
+
+        &--small {
+            color: var(--color-text);
+        }
+    }
+}
+
+/* ======================================================================== *
+ * CHIRURGIE BUCCALE
+ * ======================================================================== */
+.chirurgie-buccale .section--top {
+    background-image: url("/img/soins/chirurgie-buccale.jpg");
+}
+
+/* ======================================================================== *
+ * ESTHETIQUE DU SOURIRE
+ * ======================================================================== */
+.esthetique-dentaire .section--top {
+    background-image: url("/img/soins/sourire-esthetique.jpg");
+}
+
+/* ======================================================================== *
+ * IMPLANTOLOGIE
+ * ======================================================================== */
+.implantologie .section--top {
+    background-image: url("/img/soins/implantologie.jpg");
+}
+
+/* ======================================================================== *
+ * ENDODONTIE
+ * ======================================================================== */
+.endodontie .section--top {
+    background-image: url("/img/soins/endodontie.jpg");
+}

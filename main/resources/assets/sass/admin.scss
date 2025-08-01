@@ -1,0 +1,52 @@
+@import "front/0-plugins/plugins-dir";
+
+@import "front/1-base/normalize";
+@import "front/1-base/root";
+
+:root {
+    --font-size: 16px;
+    --footer-height: 0;
+}
+
+@import "front/1-base/base";
+
+@import "front/2-layout/grid";
+@import "front/2-layout/admin/colors";
+@import "front/2-layout/admin/default";
+
+@import "front/2-layout/admin/header";
+
+.line-separation {
+    border-bottom: 1px solid $color-line-separation;
+    margin: 30px 0;
+}
+
+.box__filter {
+    margin-bottom: 30px;
+}
+
+.js-delete-attachment {
+    display: block;
+    background-color: #9a9a9a;
+    text-align: center;
+    color: #fff;
+}
+
+@import "front/3-modules/admin/form";
+@import "front/3-modules/admin/flash";
+//@import "front/3-modules/icons";
+@import "front/3-modules/image";
+@import "front/3-modules/admin/dropdown";
+@import "front/3-modules/admin/ck-editor";
+@import "front/3-modules/admin/table";
+@import "front/3-modules/admin/block-page";
+
+ul.pagination {
+    li {
+        display: inline-block;
+
+        span, a {
+            padding: 0 15px;
+        }
+    }
+}

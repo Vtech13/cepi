@@ -1,0 +1,68 @@
+html {
+    font-size: var(--font-size);
+}
+
+body {
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size);
+    font-style: normal;
+    font-weight: var(--fw-regular);
+    text-align: justify;
+    color: var(--color-text);
+    background-color: var(--color-white);
+    -webkit-font-smoothing: antialiased;
+    word-wrap: break-word;
+    line-height: var(--line-height);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 30px 0;
+    font-size: 24px;
+    font-family: var(--font-family-primary);
+    font-style: normal;
+    font-weight: var(--fw-bold);
+    line-height: var(--line-height);
+}
+
+a {
+    color: var(--color-link);
+}
+
+/**
+ * DIVERS CLASSES
+ * --------------------
+ */
+.t-center {
+    text-align: center;
+}
+
+.t-left {
+    text-align: left;
+}
+
+.t-justify {
+    text-align: justify;
+}
+
+.d_none {
+    display: none;
+}
+
+.d_block {
+    display: block;
+}
+
+.clearfix {
+    clear: both;
+    overflow: hidden;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+hr.line {
+    height: 1px;
+    background-color: var(--color-yellow-500);
+    margin: 15px 0;
+}

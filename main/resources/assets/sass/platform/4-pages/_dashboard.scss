@@ -1,0 +1,42 @@
+.dashboard {
+    .tab__links {
+        div {
+            display: inline-block;
+
+            &.sidebar__list-item--active {
+                .tab__link {
+                    background-color: var(--color-white);
+                }
+            }
+        }
+
+        .tab__link {
+            background: var(--color-grey);
+            padding: 10px;
+        }
+    }
+
+    .box-info {
+        &__value {
+            p:last-child {
+                margin: 0;
+            }
+        }
+    }
+
+    .info {
+        margin: 0 auto 50px;
+        border-bottom: 3px solid;
+        padding: 0 20px 50px;
+        max-width: 800px;
+
+        &__text {
+            margin-bottom: 30px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+            border-bottom: none;
+        }
+    }
+}

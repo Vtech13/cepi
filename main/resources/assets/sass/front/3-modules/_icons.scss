@@ -1,0 +1,59 @@
+/**
+ * Icons
+ * @param $backgroundImage
+ * @param $size Size en px
+ * --------------------
+ */
+@mixin icon($backgroundImage, $size: 20px) {
+    display: inline-block;
+    width: $size;
+    height: $size;
+    vertical-align: middle;
+    background-image: $backgroundImage;
+    background-repeat: no-repeat;
+    background-size: $size;
+}
+
+.icon-svg {
+    --size: 20px;
+    width: var(--size);
+    height: var(--size);
+    vertical-align: middle;
+}
+
+/**
+ * All Icons
+ * -------------------
+ */
+
+//.icon-implants-dentaires {
+//    @include icon(url('/img/icon/implants-dentaires.svg'), 150px);
+//}
+//
+//.icon-parodontologie {
+//    @include icon(url('/img/icon/parodontologie.svg'), 150px);
+//}
+//
+//.icon-soins-esthetiques {
+//    @include icon(url('/img/icon/soins-esthetiques.svg'), 150px);
+//}
+//
+//.icon-phone {
+//    @include icon(url('/img/icon/phone.svg'), 80px);
+//}
+//
+//.icon-website {
+//    @include icon(url('/img/icon/website.svg'), 80px);
+//}
+//
+//.icon-plaquette {
+//    @include icon(url('/img/icon/plaquette.svg'), 80px);
+//}
+//
+//.icon-questionaire {
+//    @include icon(url('/img/icon/questionaire.svg'), 80px);
+//}
+//
+//.icon-sms {
+//    @include icon(url('/img/icon/sms.svg'), 80px);
+//}

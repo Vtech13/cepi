@@ -1,0 +1,41 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+    //&:hover {
+    //    .dropdown__content {
+    //        display: block;
+    //    }
+    //}
+
+    &__button {
+        cursor: pointer;
+    }
+
+    &__content {
+        display: none;
+        position: absolute;
+        background-color: #f7f6f4;
+        min-width: 130px;
+        box-shadow: 0 1px 0 rgba(0,0,0,0.175);
+        z-index: 1;
+        right: 0;
+        top: 50px;
+
+        &.open {
+            display: block;
+        }
+    }
+
+    &__link {
+        display: block;
+        width: 100%;
+        padding: 10px 10px;
+        text-decoration: none;
+
+        &:hover {
+            background-color: #eaeaea;
+            opacity: 1;
+        }
+    }
+}

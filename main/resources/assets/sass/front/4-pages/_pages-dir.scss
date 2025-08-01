@@ -1,0 +1,21 @@
+.ff-hand {
+    font-family: var(--font-family-hand);
+    font-size: 45px;
+}
+
+
+@import "home";
+@import "cabinet";
+@import "soins";
+@import "conseils-patients";
+@import "espaces-praticiens";
+@import "videos-utiles";
+@import "contact";
+@import "mentions-legales";
+@import "posts";
+
+@media (max-width: 768px) {
+    .ff-hand {
+        font-size: 35px;
+    }
+}

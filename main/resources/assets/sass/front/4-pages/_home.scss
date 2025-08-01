@@ -1,0 +1,46 @@
+.home {
+    .section--top {
+        background-image: url("/img/clinique-cepi-accueil.jpg");
+        background-color: #d6dee0;
+
+        p {
+            color: var(--color-green);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    }
+
+    .section__1 {
+        .block-text {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+/* ======================================================================== *
+ * SOINS CATEGORIES
+ * ======================================================================== */
+
+.soins-categories {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+
+    @media (max-width: 992px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.box-icon {
+    .icon-svg {
+        --size: 150px;
+        margin-bottom: 10px;
+    }
+}
+
+/* ======================================================================== *
+ * SECTION NEWS
+ * ======================================================================== */
+.section__news {
+    padding-top: 0;
+}

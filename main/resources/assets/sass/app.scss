@@ -1,0 +1,46 @@
+@import "front/0-plugins/fonts/questrial";
+@import "front/0-plugins/fonts/open-sans";
+@import "front/0-plugins/fonts-handwrinting";
+
+@import "front/1-base/normalize";
+@import "front/1-base/root";
+@import "front/1-base/base";
+
+@import "front/2-layout/grid";
+@import "front/2-layout/default";
+@import "front/2-layout/header";
+@import "front/2-layout/footer";
+
+@import "front/3-modules/form";
+@import "front/3-modules/flash";
+@import "front/3-modules/icons";
+@import "front/3-modules/image";
+@import "front/3-modules/titles";
+@import "front/3-modules/section";
+@import "front/3-modules/block-text";
+@import "front/3-modules/box-icon";
+@import "front/3-modules/animation";
+@import "front/3-modules/block-post";
+@import "front/3-modules/dropdown";
+@import "front/3-modules/modal";
+
+.ff-hand {
+    font-family: var(--font-family-hand);
+    font-size: 45px;
+}
+
+@import "front/4-pages/home";
+@import "front/4-pages/cabinet";
+@import "front/4-pages/soins";
+@import "front/4-pages/conseils-patients";
+@import "front/4-pages/espaces-praticiens";
+@import "front/4-pages/videos-utiles";
+@import "front/4-pages/contact";
+@import "front/4-pages/mentions-legales";
+@import "front/4-pages/posts";
+
+@media (max-width: 768px) {
+    .ff-hand {
+        font-size: 35px;
+    }
+}

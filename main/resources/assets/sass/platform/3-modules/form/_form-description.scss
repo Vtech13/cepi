@@ -1,0 +1,13 @@
+/**
+ * Used in Step1
+ */
+.form-description {
+    p {
+        margin-bottom: 0;
+    }
+
+    &__name {
+        font-size: 20px;
+        //border-bottom: 1px solid $color-light-blue;
+    }
+}

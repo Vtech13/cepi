@@ -1,0 +1,94 @@
+$sidebar-width: 0;
+$header-height: 132px;
+
+body {
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size);
+    font-style: normal;
+    font-weight: var(--fw-regular);
+    text-align: left;
+    color: $color-text;
+    background-color: $body-bg;
+    -webkit-font-smoothing: antialiased;
+    word-wrap: break-word;
+    line-height: var(--line-height);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 30px 0;
+    font-size: 24px;
+    font-family: var(--font-family-primary);
+    font-style: normal;
+    font-weight: var(--fw-regular);
+    line-height: var(--line-height);
+}
+
+a {
+    color: $color-link;
+}
+
+/**
+ * DIVERS CLASSES
+ * --------------------
+ */
+.t-center {
+    text-align: center;
+}
+
+.t-left {
+    text-align: left;
+}
+
+.t-justify {
+    text-align: justify;
+}
+
+.d_none {
+    display: none;
+}
+
+.d_block {
+    display: block;
+}
+
+.clearfix {
+    clear: both;
+    overflow: hidden;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+
+
+
+
+
+.wrap {
+    display: grid;
+    height: 100%;
+    max-height: 100%;
+    grid-template-columns: $sidebar-width 1fr;
+    grid-template-rows: $header-height 1fr;
+    grid-template-areas: "header header""sidebar-wrapper main-content";
+    //overflow: hidden;
+}
+
+.header {
+    grid-area: header;
+    width: 100%;
+    box-shadow: 0 0 10px #000;
+    padding: 12px 0 15px;
+}
+
+.sidebar-wrapper {
+    grid-area: sidebar-wrapper;
+}
+
+.main-content {
+    padding-bottom: 50px;
+    padding-top: 30px;
+    overflow-y: auto;
+}
+

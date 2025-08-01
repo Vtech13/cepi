@@ -1,0 +1,35 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+    &:hover {
+        .dropdown__content {
+            display: block;
+        }
+    }
+
+    &__button {
+        cursor: pointer;
+        color: $color-white;
+        font-size: 18px;
+    }
+
+    &__content {
+        display: none;
+        position: absolute;
+        background-color: #304257;
+        min-width: 90px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        border: 1px solid #ffca45;
+        border-radius: 5px;
+        z-index: 1;
+        right: 0;
+    }
+
+    &__link {
+        color: $color-yellow;
+        padding: 5px 10px;
+        text-decoration: none;
+        display: block;
+    }
+}

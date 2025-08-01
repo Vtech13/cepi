@@ -1,0 +1,15 @@
+/**
+ * Icons
+ * @param $backgroundImage
+ * @param $size Size en px
+ * --------------------
+ */
+@mixin icon($backgroundImage, $size: 20px) {
+    display: inline-block;
+    width: $size;
+    height: $size;
+    vertical-align: middle;
+    background-image: $backgroundImage;
+    background-repeat: no-repeat;
+    background-size: $size;
+}

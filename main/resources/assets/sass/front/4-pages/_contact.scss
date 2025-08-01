@@ -1,0 +1,23 @@
+.contact {
+    .header{
+        z-index: 9999;
+    }
+
+    .block-text__title {
+        margin-bottom: 30px;
+    }
+
+    #mapid {
+        height: 100%;
+
+        .leaflet-top {
+            z-index: 1112;
+        }
+    }
+
+    .tel {
+        text-align: center;
+        font-size: 30px;
+        margin: 15px 0 30px;
+    }
+}

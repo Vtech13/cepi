@@ -1,0 +1,139 @@
+$color-border: $color-bg-editor;
+$bg: $color-bg-editor;
+
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid $color-border;
+    border-radius: 8px;
+    border-collapse: separate;
+    border-spacing: 0;
+
+    thead {
+        tr {
+            th {
+                border-bottom: 2px solid $color-border;
+                text-align: left;
+                padding: 5px 10px;
+
+                &.table-action {
+                    width: 70px;
+                }
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            td {
+                padding: 5px 10px;
+                vertical-align: top;
+            }
+
+            &:nth-of-type(even) {
+                background-color: $bg;
+            }
+
+            &:hover {
+                opacity: .8;
+            }
+        }
+    }
+
+
+    &--bordered {
+        th, td {
+            border-right: 1px solid $color-border;
+            border-collapse: separate;
+        }
+    }
+
+    .table-inside {
+        padding: 0;
+        border-top: none;
+
+        .table {
+            background-color: transparent;
+            margin-bottom: 0;
+            border-top: 0;
+            border-left: 0;
+            border-bottom: 0;
+            border-right: 0;
+            border-radius: 0;
+
+            th:last-child, td:last-child {
+                border-right: none;
+            }
+
+            td {
+                border-top: 1px solid $color-border;
+            }
+
+            tr:first-child {
+                td {
+                    border-top: none;
+                }
+            }
+
+            tbody tr:nth-of-type(even) {
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 750px) {
+
+    .table-responsive table,
+    .table-responsive thead,
+    .table-responsive tbody,
+    .table-responsive tr,
+    .table-responsive th,
+    .table-responsive td {
+        display: block;
+    }
+
+    .table-responsive thead {
+        display: none;
+    }
+
+    .table > tbody > tr:nth-of-type(even) {
+        background-color: transparent;
+    }
+
+    .table-responsive tbody > tr > td {
+        padding-left: 230px;
+        position: relative;
+        min-height: 50px;
+        border-left: none;
+
+        &.actions {
+            text-align: left;
+        }
+    }
+
+    .table-responsive td:nth-child(even) {
+        background-color: $bg;
+    }
+
+    .table-responsive td::before {
+        padding: 10px;
+        content: attr(data-label);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200px;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .table-responsive tr {
+        margin-bottom: 3rem;
+    }
+
+    .table-responsive th + td {
+        padding-left: 10px;
+    }
+}

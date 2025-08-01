@@ -1,0 +1,39 @@
+:root {
+    --font-family-primary: 'Questrial', 'Open sans', sans-serif;
+    --font-family-second: 'Pacifico', 'Open sans', sans-serif; // not used
+    --font-family-hand: 'Parisienne', 'Questrial', 'Open sans', sans-serif;
+
+    --fw-light: 100;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+
+    --font-size: 18px;
+    --line-height: 1.42857143;
+
+    --footer-height: 196px;
+
+    --color-white: #ffffff;
+    --color-black: #000;
+
+    --color-red: #b96e6c; // for errors
+
+    --color-yellow-500: #DBB24F;
+
+    //--color-pink-darker: #981854; // use 1 page _cabinet
+    //--color-pink-dark: #a2195b; // use multiple
+    //--color-pink-medium: #d40967; // use 2
+    //--color-pink-light: #e61d72; // use 1 form
+
+    --color-grey-800: #2a3133;
+    --color-grey-400: #969fa1;
+    --color-grey-300: #d6d6d6;
+    --color-grey-100: #ddd;
+
+    --color-green: #a8e71f;
+
+    --color-text: var(--color-grey-800);
+    --color-link: var(--color-yellow-500);
+}
+

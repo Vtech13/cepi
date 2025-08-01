@@ -1,0 +1,34 @@
+.form {
+    .ck {
+
+        &.ck-reset {
+            border: 1px solid $color-yellow;
+        }
+
+        &.ck-toolbar {
+            background-color: transparent;
+            border: none;
+        }
+
+        &.ck-editor__main:focus {
+            outline: none;
+        }
+
+        &.ck-editor__main > .ck-editor__editable {
+            background-color: #8a8a8a;
+            border: none;
+            border-top: 1px solid;
+            border-color: $color-text !important;
+
+            &:focus {
+                outline: none;
+                box-shadow: none;
+                border-color: $color-text !important;
+                border-left: none;
+                border-right: none;
+                border-bottom: none;
+            }
+        }
+    }
+}
+

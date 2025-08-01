@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="104px" height="104px" viewBox="0 0 104 104" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>close</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="104" height="104"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="close">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="path-1"></g>
+            <g id="Group" mask="url(#mask-2)">
+                <g transform="translate(-38.000000, -39.000000)">
+                    <g transform="translate(91.000000, 91.000000) rotate(45.000000) translate(-91.000000, -91.000000) translate(27.000000, 27.000000)">
+                        <path d="M105.9925,51.3957105 L21.3258331,51.3957105 C8.6258331,51.3957105 0.159166445,56.3957105 0.159166445,63.8957105 C0.159166445,71.3957105 8.6258331,76.3957105 21.3258331,76.3957105 L105.9925,76.3957105 C118.6925,76.3957105 127.159166,71.3957105 127.159166,63.8957105 C127.159166,56.3957105 118.6925,51.3957105 105.9925,51.3957105 Z" id="Shape" fill="#DBB24F" fill-rule="nonzero"></path>
+                        <path d="M105.820928,51.2241381 L21.1542609,51.2241381 C8.45426095,51.2241381 -0.0124057075,56.2241381 -0.0124057075,63.7241381 C-0.0124057075,71.2241381 8.45426095,76.2241381 21.1542609,76.2241381 L105.820928,76.2241381 C118.520928,76.2241381 126.987594,71.2241381 126.987594,63.7241381 C126.987594,56.2241381 118.520928,51.2241381 105.820928,51.2241381 Z" id="Shape-Copy-5" fill="#DBB24F" fill-rule="nonzero" transform="translate(63.487594, 63.724138) rotate(90.000000) translate(-63.487594, -63.724138) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

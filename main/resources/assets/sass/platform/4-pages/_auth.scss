@@ -1,0 +1,62 @@
+.platform-info {
+    max-width: 150px;
+    margin: 0 auto;
+    line-height: 1.1;
+
+    a {
+        display: block;
+    }
+
+    span {
+        display: block;
+        color: var(--color-blue-light);
+        text-transform: uppercase;
+    }
+
+    &--company-name {
+        font-size: 1.2em;
+        letter-spacing: 1.6px;
+    }
+
+    &--name {
+        font-weight: var(--fw-bold);
+        font-size: 1.3em;
+        letter-spacing: 0.9px;
+    }
+
+    &--version {
+        text-transform: inherit;
+        font-size: .9em;
+        color: var(--color-text);
+    }
+}
+
+.auth {
+    overflow: auto;
+
+    .form {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    &.login {
+        h1 {
+            text-align: center;
+        }
+
+        .form {
+            max-width: 280px;
+
+            &--login {
+                padding-top: 7%;
+            }
+        }
+    }
+
+    &.reset-password {
+        .form {
+            max-width: 280px;
+            padding-top: 10%;
+        }
+    }
+}

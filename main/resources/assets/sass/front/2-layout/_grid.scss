@@ -1,0 +1,323 @@
+/* GRID */
+
+.grid {
+    display: grid;
+    grid-column-gap: 20px;
+
+    &.col-2 {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* CONTAINER */
+.container,
+.container-fluid {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+	.container {
+		width: 750px;
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+		width: 970px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		width: 1170px;
+	}
+}
+
+/* ROW */
+.row {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-gap: 20px;
+
+	&.gap-0 {
+		grid-gap: 0;
+	}
+	&.gap-15 {
+		grid-gap: 15px;
+	}
+}
+
+.col-xs-12 {
+	grid-column: span 12;
+	overflow: hidden;
+}
+
+.col-xs-11 {
+	grid-column: span 11;
+	overflow: hidden;
+}
+
+.col-xs-10 {
+	grid-column: span 10;
+	overflow: hidden;
+}
+
+.col-xs-9 {
+	grid-column: span 9;
+	overflow: hidden;
+}
+
+.col-xs-8 {
+	grid-column: span 8;
+	overflow: hidden;
+}
+
+.col-xs-7 {
+	grid-column: span 7;
+	overflow: hidden;
+}
+
+.col-xs-6 {
+	grid-column: span 6;
+	overflow: hidden;
+}
+
+.col-xs-5 {
+	grid-column: span 5;
+	overflow: hidden;
+}
+
+.col-xs-4 {
+	grid-column: span 4;
+	overflow: hidden;
+}
+
+.col-xs-3 {
+	grid-column: span 3;
+	overflow: hidden;
+}
+
+.col-xs-2 {
+	grid-column: span 2;
+	overflow: hidden;
+}
+
+.col-xs-1 {
+	grid-column: span 1;
+	overflow: hidden;
+}
+
+.col-asc {
+	align-self: center;
+}
+
+.col-jsc {
+	justify-self: center;
+}
+
+.col-jse {
+	justify-self: end;
+}
+
+@media (min-width: 768px) {
+	.col-sm-12 {
+		grid-column: span 12;
+		overflow: hidden;
+	}
+
+	.col-sm-11 {
+		grid-column: span 11;
+		overflow: hidden;
+	}
+
+	.col-sm-10 {
+		grid-column: span 10;
+		overflow: hidden;
+	}
+
+	.col-sm-9 {
+		grid-column: span 9;
+		overflow: hidden;
+	}
+
+	.col-sm-8 {
+		grid-column: span 8;
+		overflow: hidden;
+	}
+
+	.col-sm-7 {
+		grid-column: span 7;
+		overflow: hidden;
+	}
+
+	.col-sm-6 {
+		grid-column: span 6;
+		overflow: hidden;
+	}
+
+	.col-sm-5 {
+		grid-column: span 5;
+		overflow: hidden;
+	}
+
+	.col-sm-4 {
+		grid-column: span 4;
+		overflow: hidden;
+	}
+
+	.col-sm-3 {
+		grid-column: span 3;
+		overflow: hidden;
+	}
+
+	.col-sm-2 {
+		grid-column: span 2;
+		overflow: hidden;
+	}
+
+	.col-sm-1 {
+		grid-column: span 1;
+		overflow: hidden;
+	}
+}
+
+@media (min-width: 992px) {
+	.col-md-12 {
+		grid-column: span 12;
+		overflow: hidden;
+	}
+
+	.col-md-11 {
+		grid-column: span 11;
+		overflow: hidden;
+	}
+
+	.col-md-10 {
+		grid-column: span 10;
+		overflow: hidden;
+	}
+
+	.col-md-9 {
+		grid-column: span 9;
+		overflow: hidden;
+	}
+
+	.col-md-8 {
+		grid-column: span 8;
+		overflow: hidden;
+	}
+
+	.col-md-7 {
+		grid-column: span 7;
+		overflow: hidden;
+	}
+
+	.col-md-6 {
+		grid-column: span 6;
+		overflow: hidden;
+	}
+
+	.col-md-5 {
+		grid-column: span 5;
+		overflow: hidden;
+	}
+
+	.col-md-4 {
+		grid-column: span 4;
+		overflow: hidden;
+	}
+
+	.col-md-3 {
+		grid-column: span 3;
+		overflow: hidden;
+	}
+
+	.col-md-2 {
+		grid-column: span 2;
+		overflow: hidden;
+	}
+
+	.col-md-1 {
+		grid-column: span 1;
+		overflow: hidden;
+	}
+}
+
+@media (min-width: 1200px) {
+	.col-lg-12 {
+		grid-column: span 12;
+		overflow: hidden;
+	}
+
+	.col-lg-11 {
+		grid-column: span 11;
+		overflow: hidden;
+	}
+
+	.col-lg-10 {
+		grid-column: span 10;
+		overflow: hidden;
+	}
+
+	.col-lg-9 {
+		grid-column: span 9;
+		overflow: hidden;
+	}
+
+	.col-lg-8 {
+		grid-column: span 8;
+		overflow: hidden;
+	}
+
+	.col-lg-7 {
+		grid-column: span 7;
+		overflow: hidden;
+	}
+
+	.col-lg-6 {
+		grid-column: span 6;
+		overflow: hidden;
+	}
+
+	.col-lg-5 {
+		grid-column: span 5;
+		overflow: hidden;
+	}
+
+	.col-lg-4 {
+		grid-column: span 4;
+		overflow: hidden;
+	}
+
+	.col-lg-3 {
+		grid-column: span 3;
+		overflow: hidden;
+	}
+
+	.col-lg-2 {
+		grid-column: span 2;
+		overflow: hidden;
+	}
+
+	.col-lg-1 {
+		grid-column: span 1;
+		overflow: hidden;
+	}
+}
+
+
+
+
+.col-md-6 {
+	&.pad-r {
+		margin-right: -10px;
+		padding: 0;
+	}
+	&.pad-l {
+		margin-left: -10px;
+		padding: 0;
+	}
+}

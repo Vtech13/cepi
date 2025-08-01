@@ -1,0 +1,25 @@
+.pagination {
+    padding: 0;
+    margin: 40px auto 0;
+    text-align: center;
+
+    li {
+        display: inline-block;
+
+        &.active {
+            .pagination__item {
+                background-color: var(--color-grey);
+            }
+        }
+    }
+
+    &__item {
+        position: relative;
+        display: block;
+        padding: .5rem .95rem;
+        margin-left: -5px;
+        line-height: 1.25;
+        background-color: var(--color-white);
+        border: 1px solid var(--color-grey);
+    }
+}

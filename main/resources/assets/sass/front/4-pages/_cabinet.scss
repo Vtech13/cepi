@@ -1,0 +1,107 @@
+.cabinet {
+    .section--top {
+        background-image: url("/img/cabinet.jpg");
+    }
+
+    .title-before-arrived {
+        margin-bottom: 30px;
+        margin-top: 45px;
+        color: var(--color-text);
+    }
+
+    .block-before-arrived {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 15px;
+
+        text-align: center;
+
+        .icon-svg {
+            --size: 70px;
+            margin-bottom: 10px;
+            color: var(--color-yellow-500);
+        }
+
+        a {
+            color: var(--color-text);
+        }
+    }
+
+    .oscar {
+        color: var(--color-text);
+        margin-top: 30px;
+        font-size: 30px;
+    }
+
+    .teams {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .section--equipe {
+        .title {
+            font-size: 2.3em;
+            margin-bottom: 30px;
+            color: var(--color-yellow-500);
+        }
+
+        .box-equipe {
+            text-align: center;
+            padding: 5px;
+            margin-bottom: 10px;
+
+            &__title {
+                font-size: 25px;
+            }
+
+            &__link {
+                display: block;
+                color: var(--color-white);
+                text-decoration: none !important;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+
+            &__img {
+                width: 100%;
+                height: 100%;
+                max-width: 250px;
+                max-height: 250px;
+                overflow: hidden;
+                border-radius: 50%;
+                margin: 0 auto 15px;
+                border: 5px solid var(--color-white);
+                -webkit-transition: border .3s ease-in-out;
+                -moz-transition: border .3s ease-in-out;
+                -o-transition: border .3s ease-in-out;
+                transition: border .3s ease-in-out;
+
+                &:hover {
+                    border: 8px solid var(--color-yellow-500);
+                }
+            }
+
+            a {
+                color: var(--color-text);
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .section--labo {
+        .block-text__title {
+            color: var(--color-text);
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .cabinet {
+        .block-before-arrived {
+            grid-template-columns: none;
+        }
+    }
+}

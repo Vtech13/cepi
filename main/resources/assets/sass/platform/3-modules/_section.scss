@@ -1,0 +1,15 @@
+.section {
+    padding: 50px 0;
+
+    &.section__pad-b-0 {
+        padding-bottom: 0;
+    }
+
+    &.section__pad-t-0 {
+        padding-top: 0;
+    }
+
+    &.section__pad-t-30 {
+        padding-top: 30px;
+    }
+}

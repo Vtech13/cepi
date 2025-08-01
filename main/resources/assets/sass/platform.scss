@@ -1,0 +1,9 @@
+@import "platform/0-plugins/plugins-dir";
+@import "platform/1-base/base-dir";
+@import "platform/2-layout/layout-dir";
+@import "platform/3-modules/modules-dir";
+@import "platform/4-pages/pages-dir";
+
+body.no-sidebar {
+    --sidebar-width: 0;
+}

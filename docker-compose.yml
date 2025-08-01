@@ -1,0 +1,53 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: cliniquecepi_main
+      MYSQL_USER: sql-dev
+      MYSQL_PASSWORD: 'NDK5r+6RIpRtSX=^=8[0oULFK'
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./docker/mysql/init:/docker-entrypoint-initdb.d
+
+  wordpress:
+    build:
+      context: ./docker/wordpress
+    container_name: wordpress
+    volumes:
+      - ./wordpress:/var/www/html
+    ports:
+      - "8080:80"
+      - "8443:443"
+    environment:
+      WORDPRESS_DB_HOST: mysql:3306
+      WORDPRESS_DB_NAME: cliniquecepi_main
+      WORDPRESS_DB_USER: sql-dev
+      WORDPRESS_DB_PASSWORD: 'NDK5r+6RIpRtSX=^=8[0oULFK'
+    depends_on:
+      - mysql
+
+  laravel:
+    build:
+      context: ./docker/laravel
+    container_name: laravel
+    volumes:
+      - ./main:/var/www/html
+    ports:
+      - "8000:80"
+      - "8001:443"
+    environment:
+      DB_CONNECTION: mysql
+      DB_HOST: mysql
+      DB_PORT: 3306
+      DB_DATABASE: cliniquecepi_main
+      DB_USERNAME: sql-dev
+      DB_PASSWORD: 'NDK5r+6RIpRtSX=^=8[0oULFK'
+    depends_on:
+      - mysql
+
+volumes:
+  db_data:

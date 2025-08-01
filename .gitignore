@@ -1,0 +1,52 @@
+# Fichiers système
+.DS_Store
+Thumbs.db
+*.log
+
+# Environnements locaux
+.env
+.env.local
+
+# Dossiers de cache et builds
+node_modules/
+vendor/
+storage/logs/*
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/views/*
+bootstrap/cache/*
+
+# Fichiers générés
+mix-manifest.json
+public/css/app.css
+public/js/app.js
+public/hot
+
+# WordPress uploads et cache
+wordpress/wp-content/uploads/
+wordpress/wp-content/cache/
+wordpress/wp-content/upgrade/
+wordpress/wp-content/backup-db/
+
+# Certificats SSL (ils sont générés automatiquement)
+docker/wordpress/ssl/
+docker/laravel/ssl/
+
+# Base de données locale
+*.sql
+*.sqlite
+mysql/
+
+# Docker volumes
+data/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Backup files
+*.bak
+*.backup
+*~

@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /office
+Disallow: /office/*
+Disallow: /platforme
+Disallow: /platforme/*

@@ -1,0 +1,36 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+    //
+    //&:hover {
+    //    .dropdown__content {
+    //        display: block;
+    //    }
+    //}
+
+    &__button {
+        cursor: pointer;
+        color: var(--color-white);
+        font-size: 18px;
+    }
+
+    &__content {
+        display: none;
+        position: absolute;
+        background-color: var(--color-white);
+        min-width: 150px;
+        width: max-content;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        //border: 1px solid var(--color-yellow-500);
+        border-radius: 5px;
+        z-index: 1;
+        //right: 0;
+    }
+
+    &__link {
+        color: var(--color-yellow-500);
+        padding: 5px 10px;
+        text-decoration: none;
+        display: block;
+    }
+}

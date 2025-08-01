@@ -1,0 +1,83 @@
+.form {
+    --color-border-input: var(--color-yellow-500);
+    --color-bg-input: var(--color-white);
+    --color-bg-submit: var(--color-yellow-500);
+    --color-text-submit: var(--color-white);
+    --color-text-field-error: var(--color-white);
+    --color-bg-field-error: var(--color-red);
+
+    &__group {
+        margin-bottom: 30px;
+    }
+
+    &__label {
+        display: block;
+        font-weight: var(--fw-bold);
+        margin-bottom: 5px;
+
+        &--radio {
+            display: inline-block;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        display: block;
+        height: 45px;
+        padding: 6px 12px;
+        border: 1px solid var(--color-border-input);
+        background-color: var(--color-bg-input);
+
+        &:active,
+        &:focus {
+            outline: 0;
+        }
+
+        &--textarea {
+            height: 150px;
+            resize: vertical;
+        }
+    }
+
+    &__submit {
+        display: block;
+        width: auto;
+        padding: 10px 22px;
+        background-color: var(--color-bg-submit);
+        color: var(--color-text-submit);
+        border: none;
+        outline: none;
+        cursor: pointer;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        font-weight: var(--fw-bold);
+        margin: 0 auto;
+
+        -webkit-transition: opacity .3s ease-in-out;
+        -moz-transition: opacity .3s ease-in-out;
+        -o-transition: opacity .3s ease-in-out;
+        transition: opacity .3s ease-in-out;
+
+        &:hover,
+        &:active,
+        &:focus {
+            outline: 0;
+            opacity: .5;
+        }
+    }
+
+    &__field-error {
+        padding: 5px;
+        margin-top: 6px;
+        font-size: 12px;
+        color: var(--color-text-field-error);
+        background-color: var(--color-bg-field-error);
+    }
+}
+
+@import "../../platform/3-modules/form/file";
+
+.prenom_form {
+    display: none;
+}

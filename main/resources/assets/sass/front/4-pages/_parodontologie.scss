@@ -1,0 +1,17 @@
+.parodontologie {
+    .section--top {
+        background-image: url("/img/TO_TRASH/parodontologie.jpg");
+    }
+
+    .section--para {
+        text-align: justify;
+
+        .block-text__title {
+            text-align: left;
+
+            &.t-center {
+                text-align: center;
+            }
+        }
+    }
+}

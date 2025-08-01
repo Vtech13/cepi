@@ -1,0 +1,35 @@
+@import "icon-mixin";
+
+.icon-close {
+    @include icon(url('/img/icon/close.svg'), 25px);
+}
+
+.icon-add {
+    @include icon(url('/img/icon/add.svg'), 25px);
+}
+
+.icon-remove {
+    @include icon(url('/img/icon/remove.svg'), 25px);
+}
+
+.icon-delete {
+    --w: 15px;
+    @include icon(url('/img/icon/trash.svg'), var(--w));
+    height: calc(var(--w) + 3px);
+}
+
+.icon-view {
+    @include icon(url('/img/icon/view.svg'), 30px);
+}
+
+.icon-edit {
+    @include icon(url('/img/icon/edit.svg'), 25px);
+}
+
+.icon-download {
+    @include icon(url('/img/icon/download.svg'), 25px);
+}
+
+.icon-download-pdf {
+    @include icon(url('/img/icon/download-pdf.svg'), 25px);
+}

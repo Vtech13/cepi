@@ -1,0 +1,38 @@
+.section {
+    padding: 60px 0;
+
+    &--pad-t {
+        padding-top: 15px;
+    }
+
+    &__pad-b-0 {
+        padding-bottom: 0;
+    }
+
+    &--top {
+        display: grid;
+        align-items: center;
+        min-height: 450px;
+        background-color: #b6bfc1;
+        background-blend-mode: multiply;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 50px;
+            z-index: 0;
+            background-size: 100% 50px;
+            background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI1MHB4IiB2aWV3Qm94PSIwIDAgMTI4MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iI2ZmZmZmZiI+PHBhdGggZD0iTTY0MCAxMzlMMCAwdjE0MGgxMjgwVjBMNjQwIDEzOXoiIGZpbGwtb3BhY2l0eT0iLjUiLz48cGF0aCBkPSJNNjQwIDEzOUwwIDQydjk4aDEyODBWNDJsLTY0MCA5N3oiLz48L2c+PC9zdmc+");
+        }
+
+        .title--h1 {
+            margin-bottom: 0;
+            color: var(--color-white);
+        }
+    }
+}

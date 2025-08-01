@@ -1,0 +1,30 @@
+.title {
+    &--h1 {
+        text-align: center;
+        font-size: 48px;
+
+        &.ff-hand {
+            font-size: 65px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        &--h1 {
+            font-size: 36px;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .title {
+        &--h1 {
+            font-size: 22px;
+
+            &.ff-hand {
+                font-size: 40px;
+            }
+        }
+    }
+}

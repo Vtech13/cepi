@@ -1,0 +1,19 @@
+.flash-message {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    z-index: 99;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+
+    .alert {
+        background-color: rgba(66, 169, 69, 0.67);
+        padding: 10px;
+        color: #fff;
+
+        &-error {
+            background-color: $color-red;
+        }
+    }
+}

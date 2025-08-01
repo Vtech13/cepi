@@ -1,0 +1,48 @@
+.header {
+    background-color: $header-background-color;
+    z-index: 10;
+
+    &__top {
+        .col-xs-6 {
+            overflow: inherit;
+        }
+    }
+
+    .header__logo {
+        display: inline-block;
+        max-width: 46px;
+        width: 100%;
+    }
+
+    .header__user {
+        float: right;
+
+        span {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
+    .header__nav {
+        margin-top: 15px;
+
+        .header__nav-item {
+            min-height: 40px;
+
+            a {
+                display: block;
+                padding: 11px 0;
+                font-size: 16px;
+
+                &.active {
+                    background-color: $color-bg-editor;
+                    border: 1px solid $color-link;
+                }
+
+                .header__nav-name {
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}

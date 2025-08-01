@@ -1,0 +1,98 @@
+$color-border-input: $color-link;
+$color-bg-input: #8a8a8a;
+$color-input: $color-text;
+$color-bg-submit: $color-link;
+$color-text-submit: $color-black;
+$color-text-field-error: $color-white;
+$color-bg-field-error: $color-red;
+$color-bg-btn-delete: $color-btn-delete;
+
+.form {
+    [class^="col-"] {
+        overflow: inherit;
+    }
+
+    &__block {
+        margin-bottom: 30px;
+    }
+
+    &__label {
+        display: block;
+        font-weight: var(--fw-bold);
+        margin-bottom: 5px;
+
+        &--radio {
+            display: inline-block;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        display: block;
+        height: 35px;
+        padding: 3px 12px;
+        border: 1px solid $color-border-input;
+        background-color: $color-bg-input;
+        color: $color-input;
+
+        &:active,
+        &:focus {
+            outline: 0;
+        }
+
+        &--textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        &--filter {
+            display: inline-block;
+            width: auto;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+    }
+
+    &__submit {
+        display: block;
+        width: auto;
+        min-width: 250px;
+        padding: 10px 22px;
+        background-color: $color-bg-submit;
+        color: $color-text-submit;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        font-weight: var(--fw-bold);
+        margin: 0 auto;
+
+        -webkit-transition: opacity .3s ease-in-out;
+        -moz-transition: opacity .3s ease-in-out;
+        -o-transition: opacity .3s ease-in-out;
+        transition: opacity .3s ease-in-out;
+
+        &:hover,
+        &:active,
+        &:focus {
+            outline: 0;
+            opacity: .5;
+        }
+
+        &--delete {
+            background-color: $color-bg-btn-delete;
+            margin-top: 30px;
+        }
+    }
+
+    &__field-error {
+        padding: 5px;
+        margin-top: 6px;
+        font-size: 12px;
+        color: $color-text-field-error;
+        background-color: $color-bg-field-error;
+    }
+}

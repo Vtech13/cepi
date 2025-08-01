@@ -1,0 +1,52 @@
+:root {
+    --font-family-primary: 'Source sans pro', sans-serif;
+    --font-family-second: 'Lato', sans-serif;
+
+    //--fw-thin: 100;
+    //--fw-extra-light: 200;
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-2-regular: 700;
+    //--fw-medium: 500;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+    --fw-2-bold: 900;
+
+    --font-size: 16px;
+    --line-height: 1.42857143;
+
+    --footer-height: 200px;
+
+    --header-height: 88px;
+    --sidebar-width: 265px;
+
+    --width-btn: 250px;
+
+    --color-white: #ffffff;
+    --color-black: #000;
+
+    --color-blue: #0A71B7; // sidebar bg
+    --color-blue-light: #3B86FC; // title + icon + header link
+    --color-blue-dark: #0A66A5; // sidebar item bg
+    --color-blue-darker: #095C94; // sidebar border-bottom item
+    --color-blue-text: #2F5281; // text + sidebar border-left item
+
+    --color-yellow: #DBB24F;
+
+    --color-grey: #ddd; // box-info -- box-shadow
+    --color-grey-dark: #707070;
+
+    --color-red: #FF6665; // btn-action bg
+    --color-red-light: #ffe5e5; // error bg
+
+    --color-green: #4AD991; // sidebar active border-left
+    --color-green-light: rgba(74, 217, 145, .10); // background (plans listing, services..)
+    --color-green-light-hover: rgba(74, 217, 145, .05);
+
+    --main-bg-color: #F7FAFB;
+    //--main-bg-color: var(--color-white);
+    --color-text: var(--color-black);
+
+    --color-header: var(--color-white);
+    --color-sidebar: var(--color-white);
+}

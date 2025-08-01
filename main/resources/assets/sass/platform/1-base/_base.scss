@@ -1,0 +1,44 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.wrap {
+    min-height: 100%;
+    margin: 0 auto calc(-1 * var(--footer-height));
+    overflow-x: hidden;
+}
+
+.push,
+.footer {
+    min-height: var(--footer-height);
+}
+
+p {
+    margin: 0 0 10px 0;
+}
+
+a {
+    text-decoration: none;
+    -webkit-transition: opacity .3s ease-in-out;
+    -moz-transition: opacity .3s ease-in-out;
+    -o-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+
+    &:hover,
+    &:active,
+    &:focus {
+        outline: 0;
+        opacity: .5;
+    }
+}

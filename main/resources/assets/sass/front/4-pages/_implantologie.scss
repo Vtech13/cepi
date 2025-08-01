@@ -1,0 +1,31 @@
+.implantologie {
+    .section--top {
+        background-image: url("/img/TO_TRASH/implants.jpg");
+    }
+
+    .color-pink {
+        font-size: 20px;
+    }
+
+    .section--para {
+        text-align: justify;
+
+        .block-text__title {
+            text-align: left;
+
+            &.t-center {
+                text-align: center;
+            }
+        }
+    }
+
+    .videos-container {
+        margin-top: 30px;
+
+        iframe {
+            width: 100%;
+            max-width: 530px;
+            height: 315px;
+        }
+    }
+}
