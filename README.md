@@ -118,7 +118,7 @@ chmod +x init-project.sh && ./init-project.sh
 - Docker : `docker/`
 - Documentation : `docs/`
 
-## Documentation obligatoire
+## Documentation Bloc 2
 - [Protocole de déploiement continu](docs/protocole_deploiement_continu.md)
 - [Critères de qualité et de performance](docs/qualite_performance.md)
 - [Protocole d’intégration continue](docs/protocole_integration_continue.md)
@@ -133,6 +133,16 @@ chmod +x init-project.sh && ./init-project.sh
 - [Manuel de déploiement](docs/manuel_deploiement.md)
 - [Manuel d’utilisation](docs/manuel_utilisation.md)
 - [Manuel de mise à jour](docs/manuel_mise_a_jour.md)
+
+## Documentation Bloc 4 (maintenance & supervision)
+- [Mise à jour des dépendances](docs/bloc4/maj_dependances.md)
+- [Système de supervision](docs/bloc4/supervision.md)
+- [Collecte et consignation des anomalies](docs/bloc4/collecte_anomalies.md)
+- [Fiche d’anomalie rencontrée](docs/bloc4/fiche_anomalie.md)
+- [Traitement d’une anomalie détectée](docs/bloc4/traitement_anomalie.md)
+- [Recommandations d’amélioration](docs/bloc4/recommandations.md)
+- [Journal de version](docs/bloc4/journal_version.md)
+- [Exemple de problème résolu avec le support client](docs/bloc4/support_client.md)
 
 ## Lancer les tests unitaires
 
