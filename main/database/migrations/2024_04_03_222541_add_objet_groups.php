@@ -13,9 +13,8 @@ class AddObjetGroups extends Migration
      */
     public function up()
     {
-        Schema::table('groups', function (Blueprint $table) {
-            $table->string('objet')->nullable(); // Add this line
-        });
+        // Cette migration n'est plus nécessaire car le champ 'objet' est déjà créé dans la migration de création de la table.
+        // Vous pouvez supprimer ce fichier après avoir vérifié l'ordre des migrations.
     }
 
     /**
@@ -25,8 +24,6 @@ class AddObjetGroups extends Migration
      */
     public function down()
     {
-        Schema::table('groups', function (Blueprint $table) {
-            //
-        });
+        //
     }
 }
