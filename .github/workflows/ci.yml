@@ -64,6 +64,10 @@ jobs:
         run: |
           cd main
           vendor/bin/phpstan analyse --memory-limit=1G || true
+      - name: Install paratest for parallel tests
+        run: |
+          cd main
+          composer require --dev brianium/paratest
       - name: Run tests
         run: |
           cd main
