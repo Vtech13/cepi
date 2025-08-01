@@ -1,0 +1,16 @@
+# Dossier Bloc 2 – Documentation projet
+
+- [Protocole de déploiement continu](protocole_deploiement_continu.md)
+- [Critères de qualité et de performance](qualite_performance.md)
+- [Protocole d’intégration continue](protocole_integration_continue.md)
+- [Architecture logicielle](architecture.md)
+- [Prototype](prototype.md)
+- [Frameworks et paradigmes](framework_paradigmes.md)
+- [Sécurité](securite.md)
+- [Accessibilité](accessibilite.md)
+- [Historique des versions](historique_versions.md)
+- [Cahier de recettes](cahier_recette.md)
+- [Plan de correction des bogues](plan_correction_bogues.md)
+- [Manuel de déploiement](manuel_deploiement.md)
+- [Manuel d’utilisation](manuel_utilisation.md)
+- [Manuel de mise à jour](manuel_mise_a_jour.md)
