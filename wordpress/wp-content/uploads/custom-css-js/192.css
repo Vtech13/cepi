@@ -1,0 +1,61 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* Ajouter votre code CSS ici.
+                     
+Par exemple:
+.exemple {
+    color: red;
+}
+
+Pour améliorer vos connaissances en CSS, visitez http://www.w3schools.com/css/css_syntax.asp
+
+Fin du commentaire */ 
+@media screen and (min-width:767px){
+	.logo-1{
+		border: 0px; /* Aucune bordure sur les côtés haut, bas et gauche */
+		border-right: 2px solid transparent; /* Applique une bordure de 2px uniquement sur le côté droit */
+		border-image: linear-gradient(
+			to bottom,
+			#FFF0 30%,  /* 30% de jaune en haut */
+			white 30% 70%, /* 40% de blanc au milieu */
+			#FFF0 70% 100% /* 30% de jaune en bas */
+		) 1; /* Applique l'image de bordure uniquement sur le côté droit */
+	}
+
+	.logo-2{
+		border: 0px; /* Aucune bordure sur les côtés haut, bas et gauche */
+		border-right: 2px solid transparent; /* Applique une bordure de 2px uniquement sur le côté droit */
+		border-image: linear-gradient(
+			to bottom,
+			#FFF0 20%,  /* 20% de jaune en haut */
+			white 20% 80%, /* 60% de blanc au milieu */
+			#FFF0 80% 100% /* 20% de jaune en bas */
+		) 1; /* Applique l'image de bordure uniquement sur le côté droit */
+	}
+
+	.logo-2-1{
+		border: 0px; /* Aucune bordure sur les côtés haut, bas et gauche */
+		border-right: 2px solid transparent; /* Applique une bordure de 2px uniquement sur le côté droit */
+		border-image: linear-gradient(
+			to bottom,
+			#FFF0 5%,  /* 20% de jaune en haut */
+			white 5% 75%, /* 60% de blanc au milieu */
+			#FFF0 75% 100% /* 20% de jaune en bas */
+		) 1; /* Applique l'image de bordure uniquement sur le côté droit */
+	}
+
+	.logo-2-2{
+		border: 0px; /* Aucune bordure sur les côtés haut, bas et gauche */
+		border-right: 2px solid transparent; /* Applique une bordure de 2px uniquement sur le côté droit */
+		border-image: linear-gradient(
+			to bottom,
+			#FFF0 15%,  /* 20% de jaune en haut */
+			white 15% 78%, /* 60% de blanc au milieu */
+			#FFF0 78% 100% /* 20% de jaune en bas */
+		) 1; /* Applique l'image de bordure uniquement sur le côté droit */
+	}
+}
+
+
+</style>
+<!-- end Simple Custom CSS and JS -->

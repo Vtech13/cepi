@@ -1,0 +1,18 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* Ajouter votre code CSS ici.
+                     
+Par exemple:
+.exemple {
+    color: red;
+}
+
+Pour améliorer vos connaissances en CSS, visitez http://www.w3schools.com/css/css_syntax.asp
+
+Fin du commentaire */ 
+
+.elementor-heading-title.elementor-size-default {
+	text-decoration-color: #C9A13A!important;
+	text-decoration-thickness: 3px!important;
+}</style>
+<!-- end Simple Custom CSS and JS -->

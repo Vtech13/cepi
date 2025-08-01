@@ -1,0 +1,65 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* Ajouter votre code CSS ici.
+                     
+Par exemple:
+.exemple {
+    color: red;
+}
+
+Pour améliorer vos connaissances en CSS, visitez http://www.w3schools.com/css/css_syntax.asp
+
+Fin du commentaire */ 
+
+#menu-1-fa2a61f .menu-item{
+	padding: 20px 20px!important;
+  	border-image: linear-gradient(white, #dcb350) 1 / 0px 3px 0px 0px;
+}
+
+#menu-1-fa2a61f li.menu-item:last-child{
+	border-image: linear-gradient(#fff0, #fff0) 1 / 0px 3px 0px 0px;
+}
+
+.icone-accueil{
+	margin: 0px 15px 0px 0px;
+}
+
+#menu-1-fa2a61f .menu-item .elementor-item:hover{
+	color:#dcb350!important;
+}
+
+#menu-1-fa2a61f .menu-item .elementor-item{
+	padding: 5px 0px 5px 0px!important;
+	margin: 0px 15px 0px 15px!important;
+}
+
+.soins{
+	background-color: #dcb350;
+	padding: 5px 15px 5px 20px;
+	color: #fff;
+	display: flex;
+	gap: 20px;
+	border-radius: 5px;
+	z-index: 1;
+	margin-left: -10px
+}
+
+.triangle{
+	display: flex;
+	align-items: center;
+}
+
+.dent{
+	z-index: 2;
+}
+
+.recherche{
+	display:none;
+}
+
+.praticiens{
+	display: flex;
+  	gap: 20px;
+	color: #dcb350;
+}</style>
+<!-- end Simple Custom CSS and JS -->

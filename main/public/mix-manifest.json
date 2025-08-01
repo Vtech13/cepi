@@ -1,0 +1,10 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/js/admin.js": "/js/admin.js",
+    "/js/platform.js": "/js/platform.js",
+    "/js/messages.js": "/js/messages.js",
+    "/css/platform.css": "/css/platform.css",
+    "/css/admin.css": "/css/admin.css",
+    "/css/login.css": "/css/login.css",
+    "/css/app.css": "/css/app.css"
+}

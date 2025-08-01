@@ -1,0 +1,24 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* Ajouter votre code CSS ici.
+                     
+Par exemple:
+.exemple {
+    color: red;
+}
+
+Pour améliorer vos connaissances en CSS, visitez http://www.w3schools.com/css/css_syntax.asp
+
+Fin du commentaire */ 
+
+#menu-1-a175f29 li.menu-item:first-child a, #menu-1-98534d7 li.menu-item:first-child a, #menu-1-27dd462 li.menu-item:first-child a, #menu-1-8197355 li.menu-item:first-child a{
+	color: #f7f5f6;
+	padding-bottom: 20px;
+}
+
+@media screen and (min-width:767px){
+	.elementor-element-17e3e86, .elementor-element-c26af53, .elementor-element-4eadc85{
+		border-image: linear-gradient(#2b2b2b, #dcb350, #2b2b2b) 4 / 0px 1px 0px 0px;
+	}
+}</style>
+<!-- end Simple Custom CSS and JS -->

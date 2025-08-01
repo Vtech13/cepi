@@ -1,0 +1,26 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* Ajouter votre code CSS ici.
+                     
+Par exemple:
+.exemple {
+    color: red;
+}
+
+Pour améliorer vos connaissances en CSS, visitez http://www.w3schools.com/css/css_syntax.asp
+
+Fin du commentaire */ 
+
+.block-text {
+	color: #000!important;
+}
+
+.block-text a {
+	color: #DCB350!important;
+}
+
+.block-text a:hover {
+	color: #DCB350!important;
+	text-decoration: underline;
+}</style>
+<!-- end Simple Custom CSS and JS -->
