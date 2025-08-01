@@ -67,6 +67,10 @@ jobs:
       - name: Check .env.example presence
         run: |
           test -f main/.env.example
+      - name: Patch DB_HOST for CI
+        run: |
+          cd main
+          sed -i 's/^DB_HOST=.*/DB_HOST=127.0.0.1/' .env
       - name: Archive build (artefact)
         if: success()
         run: |
