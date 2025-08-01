@@ -52,6 +52,10 @@ jobs:
         run: |
           sudo apt-get update && sudo apt-get install -y mysql-client
           mysql -h127.0.0.1 -P3306 -usql-dev -p'NDK5r+6RIpRtSX=^=8[0oULFK' -e 'SHOW DATABASES;'
+      - name: Patch DB_HOST for CI
+        run: |
+          cd main
+          sed -i 's/^DB_HOST=.*/DB_HOST=127.0.0.1/' .env
       - name: Run migrations
         run: |
           cd main
@@ -67,10 +71,6 @@ jobs:
       - name: Check .env.example presence
         run: |
           test -f main/.env.example
-      - name: Patch DB_HOST for CI
-        run: |
-          cd main
-          sed -i 's/^DB_HOST=.*/DB_HOST=127.0.0.1/' .env
       - name: Archive build (artefact)
         if: success()
         run: |
