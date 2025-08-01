@@ -1,0 +1,68 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  laravel-tests:
+    runs-on: ubuntu-latest
+    services:
+      mysql:
+        image: mysql:8.0
+        env:
+          MYSQL_ROOT_PASSWORD: root
+          MYSQL_DATABASE: cliniquecepi_main
+          MYSQL_USER: sql-dev
+          MYSQL_PASSWORD: NDK5r+6RIpRtSX=^=8[0oULFK
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd="mysqladmin ping --silent" --health-interval=10s --health-timeout=5s --health-retries=3
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          extensions: mbstring, bcmath, pdo_mysql, imagick
+          coverage: xdebug
+      - name: Install Composer dependencies
+        run: |
+          cd main
+          composer install --prefer-dist --no-interaction --no-scripts
+      - name: Copy .env.example
+        run: |
+          cd main
+          cp .env.example .env
+      - name: Generate Laravel key
+        run: |
+          cd main
+          php artisan key:generate
+      - name: Run migrations
+        run: |
+          cd main
+          php artisan migrate --seed --force
+      - name: Run PHPStan (analyse statique)
+        run: |
+          cd main
+          vendor/bin/phpstan analyse --memory-limit=1G || true
+      - name: Run tests
+        run: |
+          cd main
+          php artisan test --parallel
+      - name: Check .env.example presence
+        run: |
+          test -f main/.env.example
+      - name: Archive build (artefact)
+        if: success()
+        run: |
+          tar czf build.tar.gz main/
+        continue-on-error: true
+      - name: Upload artefact
+        uses: actions/upload-artifact@v4
+        with:
+          name: build
+          path: build.tar.gz
