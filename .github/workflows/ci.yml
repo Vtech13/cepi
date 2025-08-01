@@ -48,6 +48,10 @@ jobs:
             echo "Waiting for MySQL..."
             sleep 2
           done
+      - name: Debug MySQL connection
+        run: |
+          apt-get update && apt-get install -y mysql-client
+          mysql -hmysql -usql-dev -p'NDK5r+6RIpRtSX=^=8[0oULFK' -e 'SHOW DATABASES;'
       - name: Run migrations
         run: |
           cd main
